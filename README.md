@@ -1,31 +1,68 @@
-# Loan Default Risk Prediction
+# 📊 Loan Default Risk Prediction – Real Dataset (GMSC)
 
-## 📘 Project Overview
-This project simulates and models loan default risk using a synthetic dataset. It demonstrates how machine learning models like logistic regression or XGBoost can be applied to predict the likelihood of default based on borrower and loan features.
-
-## 📊 Dataset
-1,000 simulated loan applicants with features including:
-- Age
-- Income
-- Loan amount and term
-- Credit score
-- Employment years and self-employment status
-- Region
-- Default label (0 = repaid, 1 = defaulted)
-
-## 🔧 Tools Used
-- Python (pandas, numpy, scikit-learn)
-- Data visualization (matplotlib, seaborn)
-- Modeling (logistic regression, random forest, XGBoost)
-
-## 🧪 Objectives
-- Build a binary classification model to predict default risk
-- Explore feature importance
-- Evaluate model performance (accuracy, precision, recall, ROC-AUC)
-
-## 📂 Files
-- `data/loan_default_dataset.csv`: Synthetic training dataset
-- `notebook.ipynb`: Full modeling workflow (to be created)
+This project uses the **“Give Me Some Credit”** dataset to build and evaluate machine learning models that predict the likelihood of loan default. It simulates a real-world credit risk use case and demonstrates the full data science workflow — from cleaning and feature engineering to modeling, evaluation, and explainability.
 
 ---
-*Created by [Chi Ho](https://github.com/phuongchi911) | Based on real-world risk modeling experience*
+
+## 📁 Project Structure
+
+---
+
+## 🔧 Workflow Summary
+
+### 1. **Data Cleaning & Preparation**
+- Removed nulls in income and dependents
+- Created custom features (e.g., `loan_to_income`, `log_income`)
+- Stratified sampling to handle class imbalance
+
+### 2. **Modeling**
+Trained and compared 3 models:
+| Model                | ROC-AUC | Notes                            |
+|----------------------|---------|----------------------------------|
+| Logistic Regression  | ~0.81   | Interpretable baseline           |
+| Random Forest        | ~0.84   | Strong performance, non-linear   |
+| XGBoost              | ~0.86   | Best accuracy, used for SHAP     |
+
+### 3. **Evaluation**
+- Metrics: ROC-AUC, Precision, Recall, F1
+- Combined ROC curve to visualize model performance
+
+### 4. **Explainability**
+- Used SHAP (SHapley Additive Explanations) to analyze feature importance
+- Found key drivers of default: past delinquencies, utilization, income
+
+---
+
+## 💡 Key Takeaways
+
+- **XGBoost** provided the highest predictive power across all metrics.
+- **SHAP analysis** revealed actionable insights for risk modeling.
+- Project demonstrates ability to work with **real-world, noisy data** and apply **explainable machine learning**.
+
+---
+
+## 📦 Tools & Libraries
+
+- Python (Pandas, NumPy, Scikit-learn)
+- XGBoost
+- SHAP
+- Matplotlib, Seaborn
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Credit risk modeling with real data
+- Feature engineering for financial applications
+- Model comparison and metric-driven selection
+- Explainable AI using SHAP
+
+---
+
+## 📂 Source
+
+Dataset: [Kaggle – Give Me Some Credit](https://www.kaggle.com/c/GiveMeSomeCredit)
+
+
+
+
