@@ -4,11 +4,11 @@ This project uses the **“Give Me Some Credit”** dataset to build and evaluat
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ---
 
-## 🔧 Workflow Summary
+##  Workflow Summary
 
 ### 1. **Data Cleaning & Preparation**
 - Removed nulls in income and dependents
@@ -34,7 +34,7 @@ Trained and compared 3 models:
 
 ---
 
-## 📦 Tools & Libraries
+## Tools & Libraries
 
 - Python (Pandas, NumPy, Scikit-learn)
 - XGBoost
@@ -42,14 +42,14 @@ Trained and compared 3 models:
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 - Credit risk modeling with real data
 - Feature engineering for financial applications
 - Model comparison and metric-driven selection
 ---
 
-## 📂 Source
+## Source
 
 Dataset: [Kaggle – Give Me Some Credit](https://www.kaggle.com/c/GiveMeSomeCredit)
 
