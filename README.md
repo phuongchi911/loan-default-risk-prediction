@@ -1,4 +1,4 @@
-# 📊 Loan Default Risk Prediction – Real Dataset (GMSC)
+# Loan Default Risk Prediction – Real Dataset (GMSC)
 
 This project uses the **“Give Me Some Credit”** dataset to build and evaluate machine learning models that predict the likelihood of loan default. It simulates a real-world credit risk use case and demonstrates the full data science workflow — from cleaning and feature engineering to modeling, evaluation, and explainability.
 
@@ -27,13 +27,7 @@ Trained and compared 3 models:
 - Metrics: ROC-AUC, Precision, Recall, F1
 - Combined ROC curve to visualize model performance
 
-### 4. **Explainability**
-- Used SHAP (SHapley Additive Explanations) to analyze feature importance
-- Found key drivers of default: past delinquencies, utilization, income
-
----
-
-## 💡 Key Takeaways
+##  Key Takeaways
 
 - **XGBoost** provided the highest predictive power across all metrics.
 - Project demonstrates ability to work with **real-world, noisy data** and apply **explainable machine learning**.
@@ -44,7 +38,6 @@ Trained and compared 3 models:
 
 - Python (Pandas, NumPy, Scikit-learn)
 - XGBoost
-- SHAP
 - Matplotlib, Seaborn
 
 ---
@@ -54,8 +47,6 @@ Trained and compared 3 models:
 - Credit risk modeling with real data
 - Feature engineering for financial applications
 - Model comparison and metric-driven selection
-- Explainable AI using SHAP
-
 ---
 
 ## 📂 Source
