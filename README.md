@@ -36,7 +36,6 @@ Trained and compared 3 models:
 ## 💡 Key Takeaways
 
 - **XGBoost** provided the highest predictive power across all metrics.
-- **SHAP analysis** revealed actionable insights for risk modeling.
 - Project demonstrates ability to work with **real-world, noisy data** and apply **explainable machine learning**.
 
 ---
